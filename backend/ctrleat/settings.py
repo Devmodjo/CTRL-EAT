@@ -38,8 +38,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'drf_spectacular',
     'restfull.apps.RestfullConfig',
 ]
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "API de Précommande de repas unniversitaire",
+    "DESCRIPTION": "Documentation de l'API",
+    "VERSION": "1.0.0",
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

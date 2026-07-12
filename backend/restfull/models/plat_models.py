@@ -10,7 +10,7 @@ class Plat(models.Model):
     image = models.ImageField(upload_to='plats/', null=True, blank=True, default=None)
     price = models.FloatField(null=False)
     disponibility = models.BooleanField(default=True)
-
+    createdAt = models.DateTimeField(auto_now_add=True)
     
     def get_id(self):
         return str(self.id)
