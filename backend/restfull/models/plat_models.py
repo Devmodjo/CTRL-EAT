@@ -4,7 +4,7 @@ from django.db import models
 
 class Plat(models.Model):
     
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4(), editable=False)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=100, null=False)
     details = models.TextField(null=True)
     image = models.ImageField(upload_to='plats/', null=True, blank=True, default=None)
